@@ -1,4 +1,6 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../store/cart-slice";
 import Product from "./Product";
 const DUMMY_PRODUCTS = [
   {
@@ -38,6 +40,8 @@ const DUMMY_PRODUCTS = [
   },
 ];
 const Products = () => {
+
+
   return (
     <div>
       <ul className="products-container">

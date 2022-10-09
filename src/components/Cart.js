@@ -1,10 +1,13 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./Cart.css";
 const Cart = () => {
-  const quantity = 5;
+
+  const count = useSelector((state) => state.cart.cartItems)
+
   return (
     <div className="cartIcon">
-      <h3>Cart: {quantity} Items</h3>
+      <h3>Cart: {count} Items</h3>
     </div>
   );
 };
