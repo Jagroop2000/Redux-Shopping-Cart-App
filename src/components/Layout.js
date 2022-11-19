@@ -15,7 +15,7 @@ const Layout = () => {
         <Header />
         <Products />
         <div className="total-price">
-          <h3>Total: ${count*25}</h3>
+          <h3>Total Price: ${count*25}</h3>
           <button className="orderBtn">Place Order</button>
         </div>{" "}
       </div>
